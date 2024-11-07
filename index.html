@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title>BernardoCity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body background="download.jpeg">
+    <div id="cabecalho">
+        <center>
+            <h2>Seja bem-vindo a</h2>
+            <h1>BernardoCity</h1>
+        </center>
+    </div>
+    
+    <center>
+        <img src="mapa_da_cidade.png" class="mapa-estilizado" alt="Mapa de BernardoCity">
+        <h5></h5>
+    </center>
+    <div id="textos">
+        <center>
+      <h4>Entrada</h4>
+      <p>Na entrada de nossa cidade, você pode ver o sistema de tratamento da água, feito com taboas para tirar excessos de sujeiras e depois o tratamento de água comum, que garante que a água da cidade seja limpa. dá para ver também todos os sistemas, como captura de energia solar, composteira, plantação, biodigestor, e etc, mas você só pode ver de perto ou entrar nesses sistemas com a permissão da prefeitura, você pode pedir esta permissão no serviços da prefeitura, que está no shopping, ou você pode mandar uma mensagem para o número da prefeitura que está lá embaixo, neste site.</p>
+      <br>
+      <h4>Educação</h4>
+      <p>Após passar a ponte que atravessa o rio, é possivel ver a nossa escola, que tem um observador para o estudo das estrelas e do sistema solar, em alguns dias, a escola propõe um evento para observar satélites que passam, você pode ir com os seus filhos nesses eventos para observar os satélites.</p>
+      <p>No canto da cidade está a faculdade, que tem várias áreas, Psicologia, Tecnologia, Arte, Ciências, e muitos outros, a localização da faculdade, perto do hospital e do tratamento de lixo perigosos, é porque o laboratório da faculdade e o hospital são os lugares que mais produzem lixo perigoso, e a faculdade fica responsável de levar este lixo para o tratamento de lixos perigosos.</p>
+      <br>
+      <h4>Lazer</h4>
+      <p>A área de lazer é muito divertida, fica perto das residências e tem vários brinquedos, existem também piscinas rasas para as crianças que não podem entrar no rio, passeio de canoa, pescaria, uma quadra de futebol/basquete, e existe uma "caixa de brinquedos" lá, cheia de bolas, brinquedos, e bonecos.</p>
+      <br>
+      <h4>Comércio</h4>
+      <p>Como comércio, nós temos 4 estabelecimentos para esta área. começando com o shopping, o shopping é enorme, tem cinema, tem todos os tipos de loja, é o responsável pelo delivery da cidade. A feira acontece de segunda a terça, das 0:00 até as 0:00 do dia seguinte. são produtos baratos e gostosos, se por acaso alguém quiser começar as vendas na feira, é preciso permissão da prefeitura. o mercado de vidro, é uma área que é o supermercado da cidade, ele funciona como um granel, você pode levar vários potes de vidro que podem ser utilizados novamente para encher com o produto que deseja, veja o <a href="https://www.youtube.com/watch?v=HYFr4sDRpmM">vídeo de exemplo.</a> o terceiro andar do hospital é a farmacia da cidade, que faz entrega de remédios e outros produtos de farmácia. </p>
+      <br>
+      <h4>Tratamento de esgoto, lixo e etc.</h4>
+      <p>O caminhão de lixo, passa nas ruas das residências as 9:00 segunda, quarta e sexta. os lixos públicos, estão em vários lugares da cidade, e toda semana ele é limpo por uma equipe de especialistas, e o lixo é retirado nos mesmos dias, segunda quarta e sexta. o tratamento de água, começa do esgosto, passa pelo biodigestor, depois passa pelo tratamento de água, e depois pelas taboas, após isso o sistema de gestão de alimentos e água envia essa água para os lugares certos.</p>
+      <br>
+     
+        </center>
+  
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="col-xs-12 copy_right_footer text-center">
+      <p>feito por: bernardo</p>
+      <h5>Número da prefeitura: +55 11 97192-1783</h5>
+  </div>
+</body>
+<style>
+    #cabecalho {
+        background-color: darkgreen;
+        color: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    h1 {
+        font-family: 'Georgia', serif;
+        font-size: 3em;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+        font-family: 'Arial', sans-serif;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+
+    .mapa-estilizado {
+        width: 53%; /* Redimensiona a imagem para aproximadamente um terço menor */
+        border: 5px solid darkgreen; /* Adiciona uma borda verde escura */
+        border-radius: 15px; /* Arredonda as bordas */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Aplica uma sombra à imagem */
+        margin: 20px 0; /* Adiciona espaçamento superior e inferior */
+        transition: transform 0.3s; /* Efeito de transição suave */
+    }
+
+    .mapa-estilizado:hover {
+        transform: scale(1.05); /* Aumenta a imagem ligeiramente ao passar o mouse */
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Aumenta a sombra ao passar o mouse */
+    }
+    #textos {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: 20px auto;
+    
+}
+.copy_right_footer {
+    background-color: #7dce83;
+    color: #000000;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 2px #554be9;
+    padding: 10px 0;
+}
+
+
+</style>
+</html>
