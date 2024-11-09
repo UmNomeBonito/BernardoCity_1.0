@@ -25,7 +25,7 @@
     <div id="textos">
         <center>
       <h4>Entrada</h4>
-      <p>Na entrada de nossa cidade, você pode ver o sistema de tratamento da água, feito com taboas para tirar excessos de sujeiras e depois o tratamento de água comum, que garante que a água da cidade seja limpa. dá para ver também todos os sistemas, como captura de energia solar, composteira, plantação, biodigestor, e etc, mas você só pode ver de perto ou entrar nesses sistemas com a permissão da prefeitura, você pode pedir esta permissão no serviços da prefeitura, que está no shopping, ou você pode mandar uma mensagem para o número da prefeitura que está lá embaixo, neste site.</p>
+      <p>Na entrada de nossa cidade, você pode ver o sistema de tratamento da água, feito com taboas para tirar excessos de sujeiras e depois o tratamento de água comum, que garante que a água da cidade seja limpa. dá para ver também todos os sistemas, como captura de energia solar, composteira, plantação, biodigestor, e etc, mas você só pode ver de perto ou entrar nesses sistemas com a permissão da prefeitura, você pode pedir esta permissão no serviços da prefeitura, que está no shopping, ou você pode mandar um pedido para a prefeitura com a opção que está lá embaixo neste site.</p>
       <br>
       <h4>Educação</h4>
       <p>Após passar a ponte que atravessa o rio, é possivel ver a nossa escola, que tem um observador para o estudo das estrelas e do sistema solar, em alguns dias, a escola propõe um evento para observar satélites que passam, você pode ir com os seus filhos nesses eventos para observar os satélites.</p>
@@ -49,8 +49,11 @@
     <br>
     <div class="col-xs-12 copy_right_footer text-center">
       <p>feito por: bernardo</p>
-      <h5>Número da prefeitura: +55 11 97192-1783</h5>
   </div>
+  <input id="solicitacao_gadagedigadageda-o" type="text" placeholder="Digite sua solicitação de visita a lugares para a prefeitura" class="form-control">
+  <button class="btn btn-danger" onclick="solicitacao()">Enviar</button>
+  
+  <br><br><br><br><br><br><br><br>
 </body>
 <style>
     #cabecalho {
@@ -114,4 +117,15 @@
 
 
 </style>
+<script>
+
+function solicitacao() {
+    document.getElementById("solicitacao_gadagedigadageda-o").value = "Seu pedido será visto, se for autorizado você será notificado.";
+    console.log("feito!");
+}
+
+
+
+
+</script>
 </html>
